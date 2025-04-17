@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Menü</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+    }
+    header {
+      background-color: #34495E;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 20px;
+    }
+    .menu-category {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .menu-category:hover {
+      transform: scale(1.05);
+    }
+    .menu-category h2 {
+      color: #34495E;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .menu-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .menu-item-content {
+      padding: 1rem;
+    }
+    .menu-item h3 {
+      margin: 0 0 0.5rem;
+    }
+    .menu-item p {
+      margin: 0 0 1rem;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      color: #E74C3C;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QR Menü</h1>
+    <p>Hoş geldiniz! Menüye göz atın.</p>
+  </header>
+
+  <main class="menu-container">
+    <!-- Kahvaltı Kategorisi -->
+    <div class="menu-category">
+      <h2>Kahvaltı</h2>
+      <div class="menu-item">
+        <img src="https://www.thespruceeats.com/thmb/Hz677yfVdPECquUOekjv0b9yXTE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-mocha-4797918-step-04-599987714aec41aba02f1f870e900dd8.jpg" alt="Mocha Kahve">
+        <div class="menu-item-content">
+          <h3>Mocha Kahve</h3>
+          <p>Sütlü, çikolatalı espresso lezzeti.</p>
+          <p class="price">45 TL</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.gulluoglukubban.com/templates/restaurant/upload/images/products/1600x1333/kahvalti_tabagi.jpg" alt="Kahvaltı Tabağı">
+        <div class="menu-item-content">
+          <h3>Kahvaltı Tabağı</h3>
+          <p>Peynir, zeytin, yumurta, domates ve daha fazlası.</p>
+          <p class="price">150 TL</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tatlılar Kategorisi -->
+    <div class="menu-category">
+      <h2>Tatlılar</h2>
+      <div class="menu-item">
+        <img src="https://i.elele.com.tr/2/1280/720/storage/files/images/2022/10/14/cilekli-cheesecake-Lx6I_cover.jpg" alt="Çilekli Cheesecake">
+        <div class="menu-item-content">
+          <h3>Çilekli Cheesecake</h3>
+          <p>Taze çilek soslu yumuşacık cheesecake.</p>
+          <p class="price">65 TL</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://iasbh.tmgrup.com.tr/8d62b4/650/344/0/527/768/930?u=https://isbh.tmgrup.com.tr/sbh/2019/01/03/findikli-kurabiye-tarifi-1546519895447.jpg" alt="Fındıklı Kurabiye">
+        <div class="menu-item-content">
+          <h3>Fındıklı Kurabiye</h3>
+          <p>Taze fındıklı, nefis kurabiye.</p>
+          <p class="price">30 TL</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://cdn.ye-mek.net/App_UI/Img/out/650/2022/08/klasik-mozaik-pasta-resimli-yemek-tarifi(16).jpg" alt="Mozaik Pasta">
+        <div class="menu-item-content">
+          <h3>Mozaik Pasta</h3>
+          <p>Çikolatalı, bisküvili nefis mozaik pasta.</p>
+          <p class="price">40 TL</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- İçecekler Kategorisi -->
+    <div class="menu-category">
+      <h2>İçecekler</h2>
+      <div class="menu-item">
+        <img src="https://servet.com/cdn/shop/files/servet-ala-turk-kahvesi-02_61b01db4-0d99-4a2f-afe9-c70684bee611.jpg" alt="Türk Kahvesi">
+        <div class="menu-item-content">
+          <h3>Türk Kahvesi</h3>
+          <p>Közde pişirilmiş, bol köpüklü.</p>
+          <p class="price">35 TL</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://i.lezzet.com.tr/images-xxlarge-recipe/ev-yapimi-konsantre-limonata-01e50b99-5890-411f-a4c2-997a71e8a5cc.jpg" alt="Limonata">
+        <div class="menu-item-content">
+          <h3>Limonata</h3>
+          <p>Serinletici, doğal limonata.</p>
+          <p class="price">20 TL</p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="https://www.dokuzuncubulut.com/images/stories/icecekler/kbuzlucayxx.jpg" alt="Soğuk Çay">
+        <div class="menu-item-content">
+          <h3>Soğuk Çay</h3>
+          <p>Ferahlatan soğuk çay çeşitleri.</p>
+          <p class="price">25 TL</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
